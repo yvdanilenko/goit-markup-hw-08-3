@@ -1,0 +1,12 @@
+.page-header {
+  position: relative;
+  border-bottom: 1px solid var(--header-line-color);
+}
+
+.page-header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--primary-white-color);
+}

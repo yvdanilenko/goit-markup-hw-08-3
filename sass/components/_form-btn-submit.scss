@@ -1,0 +1,25 @@
+.main-page-form__button {
+  @extend %button;
+
+  display: flex;
+  min-width: 200px;
+  padding: 10px 55px 10px 56px;
+
+  box-shadow: 0px 4px 4px var(--button-shadow);
+
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+
+  transition: background-color var(--time-cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--modal-button-hover);
+  }
+}

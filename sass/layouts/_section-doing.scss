@@ -1,0 +1,43 @@
+.work-section {
+  padding-top: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.work-section__list {
+  @extend %list;
+  display: flex;
+}
+
+.work-section__thumb {
+  position: relative;
+  display: flex;
+
+  width: 100%;
+  height: auto;
+
+  &:not(:last-child) {
+    margin-right: var(--card-set-gap);
+  }
+}
+
+.work-section__label {
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--primary-white-color);
+}

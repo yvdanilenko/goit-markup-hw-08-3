@@ -1,0 +1,47 @@
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(+100%);
+  transition: transform var(--time-cubic), opacity var(--time-cubic);
+
+  opacity: 0;
+
+  .portfolio-cards__link:hover &,
+  .portfolio-cards__link:focus & {
+    transform: translate(0);
+
+    opacity: 1;
+    transition: transform var(--time-cubic), opacity var(--time-cubic);
+  }
+}
+
+.card-overlay__text {
+  position: absolute;
+  width: 100%;
+  color: var(--primary-white-color);
+
+  padding: 63px 24px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 100%;
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  opacity: 0;
+
+  .portfolio-cards__link:hover &,
+  .portfolio-cards__link:focus & {
+    opacity: 1;
+
+    transition: transform var(--time-cubic), opacity var(--time-cubic);
+  }
+}
